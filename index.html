@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,300;0,700;1,400&family=Lugrasimo&family=Nunito:ital,wght@0,400;0,700;1,300&family=Open+Sans:wght@300&family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,700&family=Rubik:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>InkHouse</title>
 </head>
@@ -13,7 +18,13 @@
         <div class="container">
             <div class="header__wrap">
                 <div class="header__logo logo">
-                    <img src="./img/logo.svg" alt="logotip">
+                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.5 0L19.9652 9.10444L26.9612 2.77806L24.1128 11.77L33.4186 10.2302L26.1609 16.2547L34.8219 19.9905L25.4593 21.1349L30.7256 28.9601L22.2306 24.861L22.4303 34.2911L17.5 26.25L12.5697 34.2911L12.7694 24.861L4.27438 28.9601L9.54072 21.1349L0.178125 19.9905L8.83906 16.2547L1.58144 10.2302L10.8872 11.77L8.03879 2.77806L15.0348 9.10444L17.5 0Z"
+                            fill="#598D66" />
+                    </svg>
+
+                    <!-- <img src="./img/logo.svg" alt="logotip"> -->
                     <p class="logo__title">Ink. House</p>
                 </div>
                 <nav class="header__menu menu"> <!-- nav блок потому что по макету есть навбар в секии с карточками  -->
@@ -28,7 +39,31 @@
                             <a class="header__link" href="#">О нас</a>
                         </li>
                         <li>
-                            <a class="header__link" href="#"><img src="./img/cart.svg" alt="cart"></a>
+                            <a class="header__link" href="#">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_3_996)">
+                                        <path
+                                            d="M9.25001 21.1667C9.75627 21.1667 10.1667 20.7563 10.1667 20.25C10.1667 19.7438 9.75627 19.3334 9.25001 19.3334C8.74375 19.3334 8.33334 19.7438 8.33334 20.25C8.33334 20.7563 8.74375 21.1667 9.25001 21.1667Z"
+                                            stroke="#2C2D35" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M19.3333 21.1667C19.8396 21.1667 20.25 20.7563 20.25 20.25C20.25 19.7438 19.8396 19.3334 19.3333 19.3334C18.8271 19.3334 18.4167 19.7438 18.4167 20.25C18.4167 20.7563 18.8271 21.1667 19.3333 21.1667Z"
+                                            stroke="#2C2D35" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M1.91666 1.91663H5.58332L8.03999 14.1908C8.12381 14.6128 8.35341 14.9919 8.68857 15.2617C9.02374 15.5315 9.44313 15.6749 9.87332 15.6666H18.7833C19.2135 15.6749 19.6329 15.5315 19.9681 15.2617C20.3032 14.9919 20.5328 14.6128 20.6167 14.1908L22.0833 6.49996H6.49999"
+                                            stroke="#2C2D35" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_3_996">
+                                            <rect width="22" height="22" fill="white" transform="translate(1 1)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </a>
                         </li>
                     </ul>
 
@@ -37,8 +72,23 @@
             </div>
         </div>
     </header>
-    <div class="container">
-        <section class="repliki">
+    <section>
+        <div class="container">
+            <div class="repliki">
+                <div class="repliki__pic">
+                    <img src="./img/hero-img.png" alt="picture">
+                </div>
+                <div class="repliki__content">
+                    <h1 class="repliki__title">Реплики картин от <span>Ink. House</span> </h1>
+                    <p class="repliki__text">Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие
+                        произведения, доступные цены.</p>
+                    <button type="submit" class="repliki__btn btn">Продукция</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /* <div class="container">
+        <section class="repliki">           
             <img class="repliki__pic" src="./img/hero-img.png" alt="picture">
             <div class="repliki__content">
                 <h1 class="repliki__title">Реплики картин от <span>Ink. House</span> </h1>
@@ -46,78 +96,161 @@
                     произведения, доступные цены.</p>
                 <button type="submit" class="repliki__btn btn">Продукция</button>
             </div>
-    </div>
+     
+    </section>  
+   </div>   -->
+    <section>
+        <div class="container">
+            <div class="reproduction">
+                <h2 class="reproduction__title h2">Репродукции</h2>
+                <nav class="reproduction__menu menu">
+                    <ul class="reproduction__list">
+                        <li>
+                            <a class="reproduction__link" href="#">Франция</a>
+                        </li>
+                        <li>
+                            <a class="reproduction__link" href="#">Германия</a>
+                        </li>
+                        <li>
+                            <a class="reproduction__link" href="#">Англия</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="cards">
+                <article class="card">
+                    <img class="card__img" src="./img/pic1.jpg" alt="MarselRuso">
+                    <p class="card__autor">Марсель Руссо</p>
+                    <h3 class="card__title">Охота Амура</h3>
+                    <p class="card__material">Холст, масло (50х80) </p>
+                    <p class="card__price">14 500 руб</p>
+                    <button type="submit" class="btn">В корзину</button>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="./img/pic2.jpg" alt="MarselRuso">
+                    <p class="card__autor">Анри Селин</p>
+                    <h3 class="card__title">Дама с собачкой</h3>
+                    <p class="card__material">Акрил, бумага (50х80) </p>
+                    <p class="card__price">16 500 руб</p>
+                    <button type="submit" class="btn">В корзину</button>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="./img/pic3.jpg" alt="MarselRuso">
+                    <p class="card__autor">Франсуа Дюпон</p>
+                    <h3 class="card__title">Процедура</h3>
+                    <p class="card__material">Цветная литография (40х60) </p>
+                    <p class="card__price">20 000 руб</p>
+                    <button type="submit" class="btn">В корзину</button>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="./img/pic4.jpg" alt="MarselRuso">
+                    <p class="card__autor">Луи Детуш</p>
+                    <h3 class="card__title">Роза</h3>
+                    <p class="card__material">Бумага, акрил (50х80) </p>
+                    <p class="card__price">12 000 руб</p>
+                    <button type="submit" class="btn">В корзину</button>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="./img/pic5.jpg" alt="MarselRuso">
+                    <p class="card__autor">Франсуа Дюпон</p>
+                    <h3 class="card__title">Птичья трапеза</h3>
+                    <p class="card__material">Цветная литография (40х60) </p>
+                    <p class="card__price">22 500 руб</p>
+                    <button type="submit" class="btn">В корзину</button>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="./img/pic6.jpg" alt="MarselRuso">
+                    <p class="card__autor">Пьер Моранж</p>
+                    <h3 class="card__title">Пейзаж с рыбой</h3>
+                    <p class="card__material">Цветная литография (40х60) </p>
+                    <p class="card__price">20 000 руб</p>
+                    <button type="submit" class="btn">В корзину</button>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="collection">
+        <div class="container">
+            <div class="new-collections">
+                <div class="new-collections__title">
+                    <img class="new-collections__icon" src="./img/Star.png" alt="star">
+                    <h3 class="new-collections__name">Новая коллекция французских авторов</h3>
+                </div>
+                <p class="new-collections__text">
+                    Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям, которые, в
+                    свою очередь, должны быть заблокированы в рамках своих собственных рациональных ограничений.
+                    <br><br>
+                    Принимая во внимание показатели успешности, граница обучения кадров предопределяет высокую
+                    востребованность направлений прогрессивного развития.
+                </p>
+                <button class="new-collections__btn  btn--yellow btn">Ознакомиться</button>
+            </div>
+        </div>
     </section>
     <section>
-       <div class="container">
-        <div class="reproduction">
-            <h2 class="reproduction__title h2">Репродукции</h2>
-            <nav class="reproduction__menu menu">
-                <ul class="reproduction__list">
-                    <li>
-                        <a class="reproduction__link" href="#">Франция</a>
-                    </li>
-                    <li>
-                        <a class="reproduction__link" href="#">Германия</a>
-                    </li>
-                    <li>
-                        <a class="reproduction__link" href="#">Англия</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="container">
+            <div class="group">
+                <div class="group__ramka">
+                    <div class="group__ramka"><img src="./img/ramka.png" alt="ramka"></div>
+                    <div class="group__layer"><img src="./img/Layer.png" alt="layer"></div>
+                </div>
+                <div class="group__content">
+                    <h3 class="group__title">Наша команда</h3>
+                    <p class="group__text">Значимость этих проблем настолько очевидна, что базовый вектор развития
+                        позволяет оценить значение экспериментов, поражающих по своей масштабности и грандиозности. Мы
+                        вынуждены отталкиваться от того, что консультация с широким активом.
+                    </p>
+                    <div class="group__person">
+                        <img src="./img/person1.png" alt="person">
+                        <img src="./img/person2.png" alt="person">
+                        <img src="./img/person3.png" alt="person">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="cards">
-            <article class="card">
-                <img class="card__img" src="./img/pic1 (2).jpg" alt="MarselRuso">
-                <p class="card__autor">Марсель Руссо</p>
-                <h3 class="card__title">Охота Амура</h3>
-                <p class="card__material">Холст, масло (50х80) </p>
-                <p class="card__price">14 500 руб</p>
-                <button type="submit" class="btn">В корзину</button>
-            </article>
-            <article class="card">
-                <img class="card__img" src="./img/pic2 (2).jpg" alt="MarselRuso">
-                <p class="card__autor">Марсель Руссо</p>
-                <h3 class="card__title">Охота Амура</h3>
-                <p class="card__material">Холст, масло (50х80) </p>
-                <p class="card__price">14 500 руб</p>
-                <button type="submit" class="btn">В корзину</button>
-            </article>
-            <article class="card">
-                <img class="card__img" src="./img/pic3 (2).jpg" alt="MarselRuso">
-                <p class="card__autor">Марсель Руссо</p>
-                <h3 class="card__title">Охота Амура</h3>
-                <p class="card__material">Холст, масло (50х80) </p>
-                <p class="card__price">14 500 руб</p>
-                <button type="submit" class="btn">В корзину</button>
-            </article>
-            <article class="card">
-                <img class="card__img" src="./img/pic4.jpg" alt="MarselRuso">
-                <p class="card__autor">Марсель Руссо</p>
-                <h3 class="card__title">Охота Амура</h3>
-                <p class="card__material">Холст, масло (50х80) </p>
-                <p class="card__price">14 500 руб</p>
-                <button type="submit" class="btn">В корзину</button>
-            </article>
-            <article class="card">
-                <img class="card__img" src="./img/pic5.jpg" alt="MarselRuso">
-                <p class="card__autor">Марсель Руссо</p>
-                <h3 class="card__title">Охота Амура</h3>
-                <p class="card__material">Холст, масло (50х80) </p>
-                <p class="card__price">14 500 руб</p>
-                <button type="submit" class="btn">В корзину</button>
-            </article>
-            <article class="card">
-                <img class="card__img" src="./img/pic6.jpg" alt="MarselRuso">
-                <p class="card__autor">Марсель Руссо</p>
-                <h3 class="card__title">Охота Амура</h3>
-                <p class="card__material">Холст, масло (50х80) </p>
-                <p class="card__price">14 500 руб</p>
-                <button type="submit" class="btn">В корзину</button>
-            </article>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__contacts">
+                <div class="footer__logo logo">
+                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.5 0L19.9652 9.10444L26.9612 2.77806L24.1128 11.77L33.4186 10.2302L26.1609 16.2547L34.8219 19.9905L25.4593 21.1349L30.7256 28.9601L22.2306 24.861L22.4303 34.2911L17.5 26.25L12.5697 34.2911L12.7694 24.861L4.27438 28.9601L9.54072 21.1349L0.178125 19.9905L8.83906 16.2547L1.58144 10.2302L10.8872 11.77L8.03879 2.77806L15.0348 9.10444L17.5 0Z"
+                            fill="#598D66" />
+                    </svg>
+                    <p class="footer__title">Ink. House</p>
+                    <p class="footer__tel">+7 (999) 543-54-54</p>
+                    <p class="footer__adress" >   Мастерская</p>
+                </div>
+                <!-- <div class="footer__contacts">
+                    <p class=""></p>
+                </div> -->
+            </div>
+            <div class="footer__menu">
+                
+                <ul class="menu__reprodaction">
+                    <li>Репродукции</li>
+                    <li><a href="#">Франция</a></li>
+                    <li><a href="#">Германия</a></li>
+                    <li><a href="#">Англия</a></li>
+                </ul>
+                <ul class="menu__news">
+                    <li>Новинки</li>
+                    <li><a href="#">2021</a></li>
+                    <li><a href="#">2022</a></li>
+               
+                </ul>   
+                <ul class="menu__aboutAs">
+                    <li>О нас</li>                  
+                    <li><a href="#">Художники</a></li>
+                    <li><a href="#">Менеджеры</a></li>                  
+                </ul>
+            </div>
         </div>
     </div>
-    </section>
+    </footer>
 
 </body>
 
