@@ -8,7 +8,7 @@
 
 .container {
   width: 100%;
-  max-width: 1110px;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -71,8 +71,8 @@
 
 /*-----------------------------section реплики----------------------------------------*/
 .repliki {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin-bottom: 70px;
 }
 .repliki__pic {
@@ -80,7 +80,12 @@
   max-width: 540px;
   display: block;
 }
+.repliki__pic img {
+  width: 100%;
+}
 .repliki__content {
+  width: 100%;
+  max-width: 540px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,10 +119,51 @@
   padding: 20px 60px;
   color: rgb(89, 141, 102);
 }
+.btn:hover {
+  cursor: pointer;
+  background: #598D66;
+  color: #F4F6F5;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+.btn:focus {
+  cursor: pointer;
+  border: 1px solid #598D66;
+  background: #D4E8D9;
+  color: #598D66;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+.btn:active {
+  background: #376B44;
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 500;
+}
 .btn--yellow {
   color: #2C2D35;
   background: #EEDB6D;
   border: none;
+}
+.btn--yellow:hover {
+  background: #FAEB97;
+  color: #2C2D35;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 500;
+}
+.btn--yellow:focus {
+  border: 1px solid #A38314;
+}
+.btn--yellow:active {
+  background: #D9B949;
+  display: inline-flex;
+  height: 65px;
 }
 
 /*-------------------------------------section репродукции-------------------------------*/
@@ -244,45 +290,6 @@
 }
 
 /*-------------------------------sectionGroup--------------------------*/
-.group {
-  padding: 70px 0;
-  display: flex;
-  gap: 30px;
-}
-.group__ramka {
-  position: relative;
-  background-position: center;
-  background-size: cover;
-}
-.group__layer {
-  position: absolute;
-  bottom: 43px;
-  left: 48px;
-}
-.group__content {
-  width: 100%;
-  max-width: 635px;
-  padding: 44px 0;
-}
-.group__title {
-  color: #2C2D35;
-  font-family: Raleway;
-  font-size: 40px;
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-.group__text {
-  color: #2C2D35;
-  font-family: Raleway;
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-.group__person {
-  display: flex;
-  gap: 30px;
-}
-
 /*-----------------------------------footer-------------------------*/
 .footer {
   background: #E1EDE6;
@@ -295,35 +302,75 @@
 .footer__logo {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.footer__txt {
+  display: flex;
+  align-items: center;
 }
 .footer__menu {
   display: flex;
   gap: 60px;
 }
-.footer__tel {
-  margin-top: 40px;
+.footer__menu_list {
   color: #2C2D35;
   font-family: Raleway;
   font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  margin-bottom: 8px;
-}
-.footer__adress {
-  color: #86928B;
-  font-family: Raleway;
-  font-size: 18px;
-  font-style: normal;
   font-weight: 500;
 }
-.footer li {
+.footer__menu_list li {
+  margin-bottom: 6px;
   list-style: none;
-  font-family: Raleway;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 150%;
 }
-.footer a {
+.footer__menu_list li a {
   text-decoration: none;
   color: #86928B;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 500;
+}
+.footer__phone {
+  margin-top: 35px;
+  text-decoration: none;
+  color: #2C2D35;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: end;
+}
+.footer__desc {
+  margin-top: 10px;
+  color: #86928B;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 500;
+}
+.footer__social {
+  display: flex;
+  flex-direction: column;
+}
+
+.social__list {
+  display: flex;
+  gap: 30px;
+}
+.social__list li {
+  margin-bottom: 6px;
+  list-style: none;
+}
+.social__list p {
+  color: #86928B;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@media (max-width: 768) {
+  .container {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
