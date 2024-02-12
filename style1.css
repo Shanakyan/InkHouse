@@ -96,6 +96,11 @@
 }
 .repliki__btn {
     align-self: self-start; 
+   
+}
+.repliki__btn:hover{
+   
+    background-color: transparent; 
 
 }
 .btn {
@@ -107,7 +112,7 @@
     font-family: Raleway;
     font-size: 20px;
     font-weight: 500;
-
+ 
 }
 /*-------------------------------------section репродукции-------------------------------*/
 .reproduction {

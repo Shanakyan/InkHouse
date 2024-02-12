@@ -23,7 +23,9 @@
   justify-content: space-between;
 }
 .header__logo {
-  display: inline-flex;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .header__list {
   display: flex;
@@ -119,6 +121,8 @@
 }
 .repliki__btn {
   align-self: self-start;
+  transition: 0.4s;
+  background: transparent;
 }
 
 .btn {
@@ -129,6 +133,8 @@
   height: 65px;
   padding: 20px 60px;
   color: rgb(89, 141, 102);
+  transition: 0.4s;
+  background: transparent;
 }
 .btn:hover {
   cursor: pointer;
@@ -217,10 +223,7 @@
 .reproduction__list_link:active {
   color: #F4F6F5;
   background: #376B44;
-}
-.reproduction__list_link.active {
-  color: #F4F6F5;
-  background: #376B44;
+  border: none;
 }
 
 .h2 {
@@ -243,8 +246,13 @@
   flex-direction: column;
 }
 .card__img {
-  width: 100%;
   margin-bottom: 20px;
+  background: #E1EDE6;
+  padding: 20px 20px 30px 20px;
+}
+.card__img img {
+  display: block;
+  width: 100%;
 }
 .card__autor {
   color: #86928B;
@@ -274,6 +282,9 @@
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 20px;
+}
+.card__btn {
+  width: 100%;
 }
 
 .collection {
@@ -317,13 +328,13 @@
   align-self: self-start;
 }
 
-
 /*-------------------------------sectionOurTeam--------------------------*/
 .group {
   margin: 70px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .group__pic {
@@ -352,10 +363,15 @@
   color: #2C2D35;
   font-size: 18px;
   font-weight: 500;
+  line-height: 27px;
 }
 .group__content__person {
   display: flex;
   gap: 30px;
+}
+
+.group__person--img {
+  border-radius: 50%;
 }
 
 /*-----------------------------------footer-------------------------*/
@@ -367,6 +383,7 @@
   display: flex;
   align-items: center;
   text-decoration: none;
+  justify-content: space-between;
 }
 .footer__wrapper {
   display: flex;
@@ -398,6 +415,10 @@
   color: #86928B;
   font-size: 18px;
   font-weight: 500;
+  transition: 0.4s;
+}
+.footer__wrapper__menu li a:hover {
+  color: rgb(55, 107, 68);
 }
 .footer .tel {
   margin-top: 40px;
@@ -425,6 +446,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+}
+.footer__social .icon {
+  display: block;
+  transition: 0.4s;
 }
 .footer__social .icon:hover svg path {
   fill: rgb(89, 141, 102);
@@ -495,9 +520,6 @@
     display: flex;
     justify-content: space-between;
     align-items: start;
-  }
-  .btn {
-    background: transparent;
   }
   .footer .tel {
     margin-top: 0px;
