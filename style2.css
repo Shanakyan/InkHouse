@@ -147,6 +147,10 @@
   color: white;
   background-color: rgb(55, 107, 68);
 }
+.reproduction__link:active {
+  color: white;
+  background-color: rgb(55, 107, 68);
+}
 
 .h2 {
   font-family: Raleway;

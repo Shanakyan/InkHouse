@@ -38,8 +38,9 @@
                             <a class="header__link" href="#">О нас</a>
                         </li>
                         <li>
-                            <a class="header__link" href="#">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            <a class="header__link cart">
+                                <!-- <div class="header__link cart__number"></div> -->
+                                <svg id = "openModal" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_3_996)">
                                         <path
@@ -94,13 +95,16 @@
                 <nav class="reproduction__menu menu">
                     <ul class="reproduction__list">
                         <li>
-                            <a class="reproduction__list_link"  id = "france" href="#">Франция</a>
+                            <button class="reproduction__list_link"  id = "france">Франция></button>
+                            <!-- <a class="reproduction__list_link"  id = "france" href="#">Франция</a> -->
                         </li>
                         <li>
-                            <a class="reproduction__list_link" id = "germany" href="#">Германия</a>
+                            <!-- <a class="reproduction__list_link" id = "germany" href="#">Германия</a> -->
+                            <button class="reproduction__list_link" id = "germany">Германия</button>
                         </li>
                         <li>
-                            <a class="reproduction__list_link" id = "england" href="#">Англия</a>
+                            <!-- <a class="reproduction__list_link" id = "england" href="#">Англия</a> -->
+                            <button class="reproduction__list_link" id = "england">Англия</button>
                         </li>
                     </ul>
                 </nav>
@@ -285,6 +289,18 @@
             </div>
         </div>
     </footer>
+
+    <div class="modalWindow d-none">
+        <span class="close">&times;</span>
+        <img class="modalWindow-img" src="./img/addBasket.png" alt="addBasket-icon">
+        <h2 class="modalWindow__title">Товар добавлен в корзину</h2>
+        <p class="modalWindow__content"></p>
+        <div class="modalWindow__btns">
+        <button class="modalWindow__btns-continue">Продолжить покупку</button>
+        <button class="modalWindow__btns-order">Оформить заказ</button></div>
+        <!-- <a class="modalWindow__btns-order" href="#">Оформить заказ</a> -->
+
+    </div>
 <script type="module" src="./script.js"></script>
 </body>
 

@@ -13,11 +13,10 @@
 
 }
 
-
 /*------------------------------header--------------------------------*/
 .header {
     background: #E1EDE6;
-    padding: 33px 0px;
+    padding: 33px 0px;  
 
     &__wrap {
         display: flex;
@@ -41,7 +40,7 @@
             margin: 0 0 0 60px;
         }
 
-        &:hover svg path {
+        li:hover svg path {
             stroke: rgba(89, 141, 102, 1);
         }
 
@@ -53,12 +52,26 @@
             stroke: rgba(55, 107, 68, 1);
         }
 
+    //   &-cart{
+    // //    display: block;
+    //    position: relative;
+    //   }
+    //   &-cart__number{
+    //     position: absolute;
+    //     width: 13px;
+    //     height:13px;
+    //     background-color:  #598D66;
+    //     border-radius: 50%;
+    //     text-align: center;
+    //     z-index: 1;
+    //   }
+
     }
 
     &__link {
         color: #2C2D35;
         text-decoration: none;
-        transition: all 0.5s ease;
+        transition: all 0.5s ease;position: relative;
 
         &:hover {
             color: #598D66;
@@ -70,9 +83,24 @@
 
         &:active {
             color: rgba(55, 107, 68, 1);
-        }
+        }   
+        
 
     }
+        .cart{
+            position: relative;
+            &__number{
+                     position: absolute;
+                     width: 13px;
+                     height:13px;
+                     background-color:  #598D66;
+                     border-radius: 50%;
+                     text-align: center;
+                     z-index: 1;
+            }
+        
+        }
+        
 }
 
 .logo {
@@ -228,6 +256,13 @@
         }
 
     }
+
+    &.addBasket{
+        width: 100%;
+        background: #598D66;
+        color: #D4E8D9;
+    }
+
 }
 
 /*-------------------------------------section репродукции-------------------------------*/
@@ -253,6 +288,7 @@
             margin: 0 0 0 32px;
         }
         &_link {
+            border: 0;
             color: #2C2D35;
             text-decoration: none;
             padding: 10px 20px;
@@ -271,9 +307,10 @@
             }
             &:active{
                 color:#F4F6F5;
-                background: #376B44;
+                background:  #598D66;
                 border: none;
             }
+          
         }
       
     }
@@ -347,6 +384,9 @@
         margin-bottom: 20px;
     }
     &__btn {
+        width: 100%;
+    }
+    .addBasket{
         width: 100%;
     }
 }
@@ -735,22 +775,93 @@
         &__text{
             font-size: 16px;
         }
-    }
-   
-    
+    }  
+ 
+}
+
+
+
+.modalWindow {
+    left: 50%;
+    top: 40px;
+    position: fixed;
+    transform:translateX(-50%);
+    // display: none;
+    background-color:#E1EDE6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 100% ;
+    max-width:500px ;
+    padding-left: 20px;
+    margin: auto;
+    // position: relative;
+    // height: 75%;
+}
+
+.modalWindow-img {
+    margin-top: 50px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    // margin: auto;
 
 }
+
+.close {
+        display: block;
+        float: right;
+        color: #aaa;
+        position: absolute;
+        top:0px;
+        right: 15px;
+        font-size: 28px;
+        font-weight: bold;
+}
+
+.modalWindow__title {
+    text-align: center;
+    font-size: 28px;
+    color: #598D66;
+
+}
+.modalWindow__content {
+}
+.modalWindow__btns {
+        display: flex;
+        flex-wrap: nowrap;
+        gap:30px;
+        justify-content: space-between;
+        
+        
+
+&-continue {
+    
+padding: 10px 15px;
+background-color: #598D66;
+color:#C3D1C6;
+border-radius: 50px;
+border: none;
+font-weight: bold;
+font-family: Raleway;
+
+}
+&-order {
+    padding: 10px 20px;
+    color:#C3D1C6;
+    background-color: #598D66;
+    border-radius: 50px;
+    border: none;
+        // font-family: Raleway;
+ 
+}
+}
+
 .d-none{
     display: none;
 }
-
-
-
-
-
-
-
-
 
 
 //   &__tel{

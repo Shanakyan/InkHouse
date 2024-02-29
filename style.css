@@ -35,7 +35,7 @@
   list-style: none;
   margin: 0 0 0 60px;
 }
-.header__list:hover svg path {
+.header__list li:hover svg path {
   stroke: rgb(89, 141, 102);
 }
 .header__list:focus svg path {
@@ -48,6 +48,7 @@
   color: #2C2D35;
   text-decoration: none;
   transition: all 0.5s ease;
+  position: relative;
 }
 .header__link:hover {
   color: #598D66;
@@ -57,6 +58,18 @@
 }
 .header__link:active {
   color: rgb(55, 107, 68);
+}
+.header .cart {
+  position: relative;
+}
+.header .cart__number {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background-color: #598D66;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 1;
 }
 
 .logo {
@@ -184,6 +197,11 @@
   display: inline-flex;
   height: 65px;
 }
+.btn.addBasket {
+  width: 100%;
+  background: #598D66;
+  color: #D4E8D9;
+}
 
 /*-------------------------------------section репродукции-------------------------------*/
 .reproduction {
@@ -204,6 +222,7 @@
   margin: 0 0 0 32px;
 }
 .reproduction__list_link {
+  border: 0;
   color: #2C2D35;
   text-decoration: none;
   padding: 10px 20px;
@@ -222,7 +241,7 @@
 }
 .reproduction__list_link:active {
   color: #F4F6F5;
-  background: #376B44;
+  background: #598D66;
   border: none;
 }
 
@@ -284,6 +303,9 @@
   margin-bottom: 20px;
 }
 .card__btn {
+  width: 100%;
+}
+.card .addBasket {
   width: 100%;
 }
 
@@ -597,6 +619,70 @@
     font-size: 16px;
   }
 }
+.modalWindow {
+  left: 50%;
+  top: 40px;
+  position: fixed;
+  transform: translateX(-50%);
+  background-color: #E1EDE6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+  padding-left: 20px;
+  margin: auto;
+}
+
+.modalWindow-img {
+  margin-top: 50px;
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.close {
+  display: block;
+  float: right;
+  color: #aaa;
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modalWindow__title {
+  text-align: center;
+  font-size: 28px;
+  color: #598D66;
+}
+
+.modalWindow__btns {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+.modalWindow__btns-continue {
+  padding: 10px 15px;
+  background-color: #598D66;
+  color: #C3D1C6;
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+  font-family: Raleway;
+}
+.modalWindow__btns-order {
+  padding: 10px 20px;
+  color: #C3D1C6;
+  background-color: #598D66;
+  border-radius: 50px;
+  border: none;
+}
+
 .d-none {
   display: none;
 }/*# sourceMappingURL=style.css.map */
